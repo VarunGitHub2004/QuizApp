@@ -1,0 +1,160 @@
+body{
+ margin:0; 
+}
+
+*{
+  font-family: 'Verdana',cursive,sans-serif;
+  color:#ffffff;
+}
+
+body{
+  background:linear-gradient(to right,#C04848 ,#480048 );
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app{
+  background-color: #2524da;
+  width: 450px;
+  min-height: 200px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.score-section{
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+/* Question/timer/left section */
+
+.question-section{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.questionCount{
+  margin-bottom: 20px;
+}
+
+.questionCount span{
+  font-size: 28px;
+}
+
+.question-text{
+  margin-bottom: 12px;
+}
+
+.timer-text{
+
+}
+
+
+/* ANSWER/RIGHT SECTION */
+.answer-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+button{
+  width:100%;
+
+  color: #ffffff;
+  background-color: #252d4a;
+  border-radius: 15px;
+  display: flex;
+  padding:8px;
+  justify-content: flex-start;
+  align-items: center;
+  border:5px solid #234668;
+  cursor:pointer;
+}
+
+.correct{
+  background: #2f922f;
+}
+
+.incorrect{
+  background: #555e7d;
+}
+
+button:hover{
+  background: #555e7d;
+}
+
+button:focus{
+  /* outline: none; */
+}
+
+button svg{
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
+.custom-btn {
+  position: absolute;
+  bottom: 0;
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+ }
+ 
+ .btn-1 {
+  background: rgb(6,14,131);
+  background: linear-gradient(0deg, rgba(6,14,131,1) 0%, rgba(12,25,180,1) 100%);
+  border: none;
+ }
+ 
+ .btn-1:hover {
+  background: rgb(0,3,255);
+  background: linear-gradient(0deg, rgb(0, 17, 255) 0%, rgba(2,126,251,1) 100%);
+ }
+
+ 
+
+ @media screen and (max-width:600px) {
+   .app{
+    flex-direction: column;
+   }
+   .custom-btn{
+    position: relative;
+    margin: 22px 0;
+
+   }
+   button{
+    margin: 4px 0;
+   }
+ }
